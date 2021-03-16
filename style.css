@@ -1,0 +1,391 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select, textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+td:not([align]), th:not([align]) {
+  text-align: left;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+body {
+  max-width: 100vw;
+  color: white;
+}
+
+.container {
+  background-image: url(images/bg-intro-desktop.png);
+  background-color: #ff7a7a;
+  background-blend-mode: multiply;
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.content .description {
+  padding-left: 3.125rem;
+}
+.content .description .title {
+  font-size: 2.875rem;
+  font-weight: 700;
+  margin-top: 15rem;
+  margin-left: 20%;
+  margin-right: 3.125rem;
+  margin-bottom: 1.875rem;
+}
+.content .description .text {
+  margin-left: 20%;
+  font-size: 0.9375rem;
+  margin-bottom: 14.375rem;
+  margin-right: 1.875rem;
+  line-height: 1.5;
+}
+.content .subscription .sub-header {
+  margin-top: 5.625rem;
+  background-color: #6055a5;
+  height: 3.125rem;
+  border-radius: 0.5rem;
+  margin-left: 3.125rem;
+  margin-right: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  width: 30rem;
+  box-shadow: 0 7px 3px 0 rgba(62, 60, 73, 0.308);
+  margin-bottom: 1.875rem;
+}
+.content .subscription .sub-intro {
+  font-weight: 300;
+}
+.content .subscription .sub-intro .bold {
+  font-weight: 600;
+}
+.content .subscription .form {
+  background-color: white;
+  width: 30rem;
+  margin-left: 3.125rem;
+  border-radius: 0.5rem;
+  padding-bottom: 1.875rem;
+  color: #ff7a7a;
+  box-shadow: 0 7px 3px 0 rgba(62, 60, 73, 0.308);
+}
+.content .subscription .form .form-group {
+  margin-left: 2.1875rem;
+  margin-right: 1.875rem;
+  margin-bottom: 0.8125rem;
+}
+.content .subscription .form .form-group:first-of-type .wrapper input {
+  margin-top: 2.5rem;
+}
+.content .subscription .form .form-group:first-of-type .wrapper .icon {
+  margin-top: 3.25rem;
+}
+.content .subscription .form .form-group .wrapper {
+  position: relative;
+  width: 25.625rem;
+}
+.content .subscription .form .form-group .wrapper input {
+  width: 25.625rem;
+  height: 3.125rem;
+  border-radius: 0.25rem;
+  outline: transparent;
+  border: 0.2px solid #b9b6d3;
+  padding-left: 1.875rem;
+  font-size: 0.9375rem;
+  transition: border-color 0.3s ease-in-out;
+}
+.content .subscription .form .form-group .wrapper input::placeholder {
+  color: rgba(0, 0, 0, 0.548);
+  font-weight: 600;
+}
+.content .subscription .form .form-group .wrapper input:focus {
+  border-color: #6055a5;
+}
+.content .subscription .form .form-group .wrapper .input-error {
+  border: 2px solid #ff7a7a;
+  color: #ff7a7a;
+}
+.content .subscription .form .form-group .wrapper .input-error::placeholder {
+  display: none;
+}
+.content .subscription .form .form-group .wrapper .icon {
+  position: absolute;
+  right: 6%;
+  margin-top: 0.75rem;
+}
+.content .subscription .form .form-group .wrapper .icon-hidden {
+  display: none;
+}
+.content .subscription .form .form-group .error-text {
+  font-size: 0.75rem;
+  margin-top: 0.4375rem;
+  text-align: right;
+  margin-right: 0.5rem;
+}
+.content .subscription .form .form-group .error-text-hidden {
+  display: none;
+}
+.content .subscription .form .btn {
+  width: 25.625rem;
+  margin-left: 2.1875rem;
+  margin-right: 1.875rem;
+  height: 3.125rem;
+  border-radius: 0.25rem;
+  border: 1px solid #38cc8c;
+  background-color: #38cc8c;
+  outline: 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 2px rgba(62, 60, 73, 0.308);
+  margin-bottom: 0.9375rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+.content .subscription .form .btn:hover {
+  background-color: #96e9c5;
+  border-color: #96e9c5;
+}
+.content .subscription .form .gray-text {
+  color: #b9b6d3;
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.content .subscription .form .gray-text .red-text {
+  color: #ff7a7a;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 999px) {
+  body {
+    max-width: 100vw;
+  }
+
+  .container {
+    background-image: url(images/bg-intro-mobile.png);
+    height: 100%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content .description {
+    padding-left: 0;
+  }
+  .content .description .title {
+    font-size: 1.25rem;
+    margin-left: 3.75rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    margin-top: 5rem;
+  }
+  .content .description .text {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 3.125rem;
+    margin-left: 1.875rem;
+  }
+  .content .subscription .sub-header {
+    margin-top: 0;
+    width: 80%;
+    height: 5rem;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1.25rem;
+  }
+  .content .subscription .sub-intro {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  .content .subscription .form {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2.5rem;
+  }
+  .content .subscription .form .form-group {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+  }
+  .content .subscription .form .form-group:first-of-type .wrapper input {
+    margin-top: 1.25rem;
+  }
+  .content .subscription .form .form-group:first-of-type .wrapper .icon {
+    margin-top: 2rem;
+  }
+  .content .subscription .form .form-group .wrapper {
+    width: 100%;
+  }
+  .content .subscription .form .form-group .wrapper input {
+    width: 100%;
+  }
+  .content .subscription .form .btn {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .content .subscription .form .gray-text {
+    margin-left: 2.5rem;
+    margin-right: 3.125rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  body {
+    max-width: 23.4375rem;
+  }
+
+  .container {
+    background-image: url(images/bg-intro-mobile.png);
+    height: 100%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content .description {
+    padding-left: 0;
+  }
+  .content .description .title {
+    font-size: 1.25rem;
+    margin-left: 3.75rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    margin-top: 5rem;
+  }
+  .content .description .text {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 3.125rem;
+    margin-left: 1.875rem;
+  }
+  .content .subscription .sub-header {
+    margin-top: 0;
+    width: 20.9375rem;
+    height: 5rem;
+    text-align: center;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .content .subscription .sub-intro {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  .content .subscription .form {
+    width: 20.9375rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+  .content .subscription .form .form-group {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+  .content .subscription .form .form-group:first-of-type .wrapper input {
+    margin-top: 1.25rem;
+  }
+  .content .subscription .form .form-group:first-of-type .wrapper .icon {
+    margin-top: 2rem;
+  }
+  .content .subscription .form .form-group .wrapper {
+    width: 18.4375rem;
+  }
+  .content .subscription .form .form-group .wrapper input {
+    width: 18.4375rem;
+  }
+  .content .subscription .form .btn {
+    width: 18.4375rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+  .content .subscription .form .gray-text {
+    margin-left: 2.5rem;
+    margin-right: 3.125rem;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1100px) {
+  body {
+    max-width: 100vw;
+  }
+
+  .content .description {
+    padding-left: 1.25rem;
+  }
+  .content .description .title {
+    margin-top: 14.375rem;
+    margin-left: 10%;
+  }
+  .content .description .text {
+    margin-left: 10%;
+  }
+  .content .subscription .sub-header {
+    margin-left: 0;
+    margin-top: 5rem;
+  }
+  .content .subscription .form {
+    margin-left: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
